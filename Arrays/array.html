@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <title></title>
+        <style>
+
+        </style>
+        <script>
+            //1.function defination one time process
+            function myFunction(x, y){ //x and y are formal argumnet/paramenter
+                //Function body
+
+                //function may retirn something
+
+                return x+y;
+
+            }
+           //2.Function calling many times function
+           
+           let z = myFunction(10, 20); //10 abd 20 are actual prameter/argumnet
+           var a = myFunction(10, 80); 
+            //this fincrion is a user define function
+
+           console.log(z);
+          
+
+
+           alert(a); //function calling
+
+           //alert is a pre defined function
+
+           var b = myFunction(40, myFunction(20, 69));
+           //alert(b);
+
+
+           //var sturdent1 = 'manshi'
+
+           var students = ['Manshi', "Kiran", 'Avinash', 'Anirudh', "Nandan"];
+
+
+           console.log('Hello '+students[1]+ " How are you") ;
+
+           alert("Hello "+students[4]+" How are you?")
+
+
+           function greet(m){
+            console.log('Hello '+m+', How are you?')
+           }
+           
+           greet(students[0]);
+
+           /*
+           for (intialization; condition; increment/decrement){
+           }
+           */
+           for(var i=0; i<=4; i++){
+                greet(students[i]);
+           }
+           /* greet(students[0]);
+           greet(students[1]);
+           greet(students[2]);
+           greet(students[3]);
+           greet(students[4]);
+           greet(students[5]); */
+
+
+           function greet2(s){
+            for(var i=0;i<=4;i++){
+                console.log('Hey! '+s[i]+', How are you?')
+            }
+           }
+           greet2(students);
+
+
+           var fruits = ['apple','mango','litchi','papya','strawberry'];
+
+           function myLikes(l){
+            console.log('I like to eat '+l)
+           }
+
+           for(var i=0;i<=4;i++){
+            myLikes(fruits[i]);
+           }
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
